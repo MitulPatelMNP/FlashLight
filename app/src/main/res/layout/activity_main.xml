@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#17202a"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F l a s h L i g h t"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/bt1"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_power_settings_new_black_24dp"
+        android:tint="@android:color/white"
+        android:visibility="visible"
+        app:cb_color="@android:color/holo_green_light"
+        app:cb_pressedRingWidth="10dip" />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/bt2"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_power_settings_new_black_24dp"
+        android:tint="@android:color/white"
+        android:visibility="gone"
+        app:cb_color="@android:color/holo_red_light"
+        app:cb_pressedRingWidth="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="B r i g h t n e s s"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_light"
+        android:padding="10dp" />
+</LinearLayout>
